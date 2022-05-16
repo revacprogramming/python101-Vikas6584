@@ -1,14 +1,34 @@
 # Files
-def file():
-  f = open("dataset/mbox-short.txt")
-  count, sum = 0,0
-  for line in f:
-    if line.startswith('X-DSPAM-Confidence'):
-      count += 1
-      x = float(line[20::1])
-      sum += x
-  print('There were', count, 'subject lines in', "dataset/mbox-short.txt" )
-  avg=sum/(count)
-  print("Average spam confidence :", avg)
+#use file name as dataset/mbox-short.txt
 
-file()
+def filehandle():
+	fname = input("Enter file name: ")
+	fhand = open(fname)
+	count,average = 0,0
+	for line in fhand:
+	    line=line.rstrip()
+	    if not line.startswith("X-DSPAM-Confidence:") : 
+	        continue
+	    average += float(line[20:])
+	    count = count + 1
+	final=average/count
+	return final
+  
+def output(final):		
+	print("Average spam confidence:", final)
+  
+def main():
+	final=filehandle()
+	output(final)
+  
+main()	
+
+
+
+
+
+
+
+
+ 
+  

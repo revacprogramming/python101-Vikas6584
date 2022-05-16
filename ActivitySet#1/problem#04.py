@@ -1,10 +1,18 @@
 # Conditional Execution
 
-hrs = input("Enter hours: ")
-h=float(hrs)
-rate= input("Enter the Rate:")
-r=float(rate)
-if h <= 40:
- 	print(h*r)
-elif h > 40:
-	print(40*r+(h-40)*1.5*r)
+def computation(h,r):
+	if h <= 40:
+	 	return h*r
+	elif h > 40:
+		return 40*r+(h-40)*1.5*r
+    
+def output(wage):
+	print ("Earning",wage)
+  
+def main():
+	hours=float(input("Enter Hours:"))
+	rate= float(input("Enter the Rate:"))
+	wage=computation(hours,rate)
+	output(wage)
+	
+main()	

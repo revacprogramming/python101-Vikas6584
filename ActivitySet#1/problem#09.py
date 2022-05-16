@@ -1,4 +1,5 @@
 # Lists
+#use fname = dataset/romeo.txt   
 
 fname = input("Enter the file name")
 fhand = open(fname)
