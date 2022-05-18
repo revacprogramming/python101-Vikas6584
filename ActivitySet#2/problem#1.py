@@ -1,12 +1,11 @@
-
-
 def add(a, b):
-    return  # ...
-
-
+    c = float(a)+float(b) 
+    return c
+  
 def main():
-    a = input  # ...
-    b = input  # ...
-
+    a = input("Enter the first number")
+    b = input("Enter the second number")
     c = add(a, b)
-    print  # ...
+    print ("The Sum =",c)
+  
+main()    
