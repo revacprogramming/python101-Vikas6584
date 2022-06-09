@@ -17,4 +17,4 @@ for key, value in counts.items():
 lst.sort()
 
 for hour, counts in lst:
-    print (hour, counts)
+    print (hour, counts)   
