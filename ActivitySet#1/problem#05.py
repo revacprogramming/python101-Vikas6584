@@ -16,4 +16,4 @@ def main():
 	p = computepay(hr,rphr)
 	print("Pay",p)
   
-main()
+main()   
