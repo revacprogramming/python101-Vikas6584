@@ -18,3 +18,4 @@ lst.sort()
 
 for hour, counts in lst:
     print (hour, counts)   
+  
