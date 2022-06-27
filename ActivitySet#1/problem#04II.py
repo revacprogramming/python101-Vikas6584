@@ -21,4 +21,4 @@ def scores(s):
 def main():
 	scores()
   
-main()  
+main()   
