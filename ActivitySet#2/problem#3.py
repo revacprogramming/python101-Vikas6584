@@ -9,11 +9,11 @@ def cs_to_lot(cs):
   return lot
 
 
-def main():
+def main():   
   cs = get_cs()
   lot = cs_to_lot(cs)
   print(lot)
 
 
 if __name__ == '__main__':
-  main()
+  main()  
